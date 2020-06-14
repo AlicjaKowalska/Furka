@@ -30,25 +30,21 @@ public class HomeController {
         List<CarModel> carModels;
         List<Offer> offers;
 
-        //Wybrano producenta -> pobierz modele tego producenta
-        if (offerFilter.getManufacturerId() != 0 && offerFilter.getModelId() == 0) {
+        //Wybrano producenta 
+        if (offerFilter.getManufacturerId() != 0) {
             if (offerFilter.getManufacturerId() == 13) {
                 offers = offersService.getOffers();
-                carModels = null;
+                //carModels = null;
             } else {
                 offers = offersService.getOffersByManufacturer(offerFilter.getManufacturerId());
-                carModels = offersService.getCarModels(offerFilter.getManufacturerId());
             }
-        } else if (offerFilter.getModelId() != 0 && offerFilter.getManufacturerId() != 0) {//wybrano producenta i model - wyswietl dany model
-            offers = offersService.getOffersByModel(offerFilter.getModelId());
-            carModels = offersService.getCarModels(offerFilter.getManufacturerId());
-        } else {//Nie wybrano producenta ani modelu ->wyswietl oferty wszystkie, modele puste
-            offers = offersService.getOffers();
-            carModels = null;
+        } else {//Nie wybrano producenta ->wyswietl oferty wszystkie
+           offers = offersService.getOffers();
+
         }
 
         model.addAttribute("carManufacturers", carManufacturers);
-        model.addAttribute("carModels", carModels);
+       // model.addAttribute("carModels", carModels);
         model.addAttribute("offers", offers);
 
         return "offersList";

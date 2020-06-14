@@ -15,11 +15,11 @@ insert into car_model(name, manufacturer_id) values
 ('Primera', 3), ('Almera', 3), ('Sunny', 3), ('Bluebird', 3), ('X-Trail', 3), ('Pathfinder', 3), ('Micra', 3), ('Maxima', 3),
 ('323', 4), ('626', 4), ('3', 4), ('6', 4), ('MX-5', 4), ('CX-5', 4), 
 ('Corolla', 5), ('Yaris', 5), ('Avensis', 5), ('Auris', 5), 
-('NX', 6), ('RX', 6), ('GS', 6), ('IS', 6), 
+('NX', 6), ('RX', 6), ('GS', 6), ('IS', 6),('    ',6), 
 ('Accord', 7), ('Civic', 7), ('Jazz', 7), ('HR-V', 7), 
 ('Fabia', 8), ('Octavia', 8), ('Superb', 8), ('Rapid', 8), ('Yeti', 8), 
 ('Golf', 9), ('Passat', 9), ('Polo', 9), ('Up', 9), ('Scirocco', 9), ('Phaeton', 9), 
-('F-Pace', 10), ('F-Type', 10), ('XE', 10), ('XF', 10), ('XJ', 10), 
+('F-Pace', 10), ('F-Type', 10), ('XE', 10), ('XF', 10), ('XJ', 10),('    ',10), 
 ('Fiesta', 11), ('Focus', 11), ('Mondeo', 11), ('Kuga', 11), ('Mustang', 11), ('F-150', 11), ('GT', 11),
 ('Seria 3', 12), ('Seria 5', 12), ('Seria 7', 12), ('X5', 12), ('Z3', 12), ('M5', 12);
 
